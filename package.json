@@ -3,7 +3,10 @@
     "version": "0.0.1",
     "description": "A demo package for Total TypeScript",
     "license": "MIT",
-    "keywords": ["demo", "typescript"],
+    "keywords": [
+        "demo",
+        "typescript"
+    ],
     "homepage": "https://github.com/nestorgm/tt-package-demo",
     "bugs": {
         "url": "https://github.com/nestorgm/tt-package-demo/issues"
@@ -13,6 +16,18 @@
         "type": "git",
         "url": "git+https://github.com/nestorgm/tt-package-demo.git"
     },
-    "files": ["dist"],
-    "type": "module"
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "devDependencies": {
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4"
+    },
+    "scripts": {
+        "tsc": "./node_modules/typescript/bin/tsc",
+        "build": "tsc",
+        "ci": "npm run build",
+        "format": "prettier --write ."
+    }
 }
