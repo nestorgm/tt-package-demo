@@ -36,8 +36,8 @@
         "check-format": "prettier --check .",
         "check-exports": "attw --pack .",
         "lint": "tsc",
-    "test": "vitest run",
-    "dev": "vitest"
+        "test": "vitest run",
+        "dev": "vitest"
     },
     "exports": {
         "./package.json": "./package.json",
